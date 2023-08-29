@@ -7,7 +7,7 @@ pipeline {
             name: 'Environment',
             description: 'Select the required environment'
         )
-        text(
+        string(
             name: 'Marks', 
             defaultValue: '', 
             description: 'Enter the python marks to run'
