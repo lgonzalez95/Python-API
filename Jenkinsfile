@@ -14,6 +14,10 @@ pipeline {
         )
     }
 
+    environment {
+        ENV = "${params.Environment}"
+    }
+
     stages {
         stage('Setup'){
             steps{
