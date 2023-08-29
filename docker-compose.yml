@@ -4,6 +4,7 @@ services:
     container_name: api-tests
     image: api-test-runner
     environment:
+      - DB_USER
       - DB_PASSWORD
       - DB_HOST=host.docker.internal
       - ENV
