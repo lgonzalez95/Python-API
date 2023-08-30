@@ -1,4 +1,4 @@
 #!/bin/bash
 
 pytest --color=yes \
---html /reports/pytest-report.html
+--html $WORKSPACE/reports/pytest-report.html
