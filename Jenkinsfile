@@ -18,7 +18,6 @@ pipeline {
         ENV = "${params.Environment}"
         DB_USER = credentials('DB_USER')
         DB_PASSWORD = credentials('DB_PASSWORD')
-        WORKSPACE = pwd()
     }
 
     stages {
