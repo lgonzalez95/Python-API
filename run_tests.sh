@@ -1,6 +1,7 @@
 #!/bin/bash
-echo ls
-echo pwd
+echo "priting"
+echo $(ls -ld $PWD/*)
+echo $(pwd)
 
 WORKSPACE=$(pwd)
 pytest --color=yes \
