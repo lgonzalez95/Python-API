@@ -1,4 +1,4 @@
 #!/bin/bash
-echo "WORKSPACE $WORKSPACE "
+WORKSPACE=$(pwd)
 pytest --color=yes \
 --html $WORKSPACE/reports/pytest-report.html
