@@ -1,21 +1,8 @@
 pipeline {
     agent any
 
-    parameters{
-        choice(
-            choices: ['dev', 'qa'], 
-            name: 'Environment',
-            description: 'Select the required environment'
-        )
-        string(
-            name: 'Marks', 
-            defaultValue: '', 
-            description: 'Enter the python marks to run'
-        )
-    }
-
     environment {
-        ENV = "${params.Environment}"
+        ENV = "qa"
         DB_USER = credentials('DB_USER')
         DB_PASSWORD = credentials('DB_PASSWORD')
     }
